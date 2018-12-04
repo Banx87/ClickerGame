@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>Money Clicker</title>
+		<link type="text/css" rel="stylesheet" href="css/normalize.css">
+		<link type="text/css" rel="stylesheet" href="css/style.css">
+		<script src="js/main.js"></script>
+	</head>
+	<body>
+		<div id="menu">
+			<div class="buttons-wrapper">
+				<button class="btn-item" onclick="popUp();">Info</button>
+			</div>
+		</div>
+		<div id="game-content">
+			<h1>Money Clicker</h1>
+			<h2 id="moneyAmount"></h2>
+			<h3 id="moneyPerSecond"></h3>
+			<div id="money" style="cursor: pointer;" onclick="moneyClicked();">
+				<img src="images/money-bag.png" alt="money bag">
+			</div>
+
+			<div 
+			style="font-weight: bold; font-size: 26px; margin-top: 5px;"
+			>Hire personnel or Buy an office</div>
+
+			<button class="btn-item" onclick="buyClicker('workers', 'workersCost');">
+				Worker: <span id="workerCost"></span>
+			</button>
+			<button class="btn-item" onclick="buyClicker('leaders', 'leaderCost');">
+				Leader: <span id="leaderCost"></span>
+			</button>
+			<button class="btn-item" onclick="buyClicker('managers', 'managerCost');">
+				Manager: <span id="managerCost"></span>
+			</button>
+			<button class="btn-item" onclick="buyClicker('offices', 'officeCost')">Office: <span id="officeCost"></span></button>
+
+			<div id="numberOfWorkers"></div>			
+			<div id="numOfLeaders"></div>
+			<div id="numOfManagers"></div>
+			<div id="numOfOffices"></div>
+
+			<div id="popup-info">
+				<h2>Welcome to the Money Clicker Game!</h2>
+				<p>Just click the money bag to produce some money</p>
+				<p>After you have enough money you can start hireing more personnel</p>
+				<p>They will produce money to you more quickly.</p>
+			</div>
+
+		</div>
+	<footer>@ Copyright. All rights reserved!</footer>
+</body>
+</html>
